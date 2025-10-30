@@ -6,7 +6,7 @@ export const CTA = () => {
     <div className="cta-container">
       {/*Lado izquierdo*/}
       <section className="left">
-        <img src="src/assets/logo.png" alt="Familybusiness Logo" className="logo" />
+        <img src="src/assets/logo.png" alt="Familybusiness Logo" className="logoAbajo" />
 
         <h2 className="headline">
           Organiza tus ingresos y gastos <br /> de manera simple.

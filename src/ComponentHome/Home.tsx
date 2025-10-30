@@ -84,10 +84,6 @@ class Home extends Component {
           <button className="btn-secundario">Crear cuenta ahora</button>
         </section>
 
-        {/*  5️⃣ Footer */}
-        <footer className="home-footer">
-          <p>© COPYRIGHT 2025 TODOS LOS DERECHOS RESERVADOS.</p>
-        </footer>
       </section>
     );
   }

@@ -1,4 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
+  const navigate = useNavigate(); // Hook de navegación
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    navigate("/inicio");
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
 
@@ -11,7 +21,7 @@ export default function Login() {
         </h2>
 
         {/* Formulario */}
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleLogin}>
           <input
             type="text"
             placeholder="Nombre"

@@ -9,14 +9,6 @@ import { CTA } from './ComponentCTA/CTA'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={< Home />} />
-        <Route path="/caracteristicas" element={<Caracteristicas />} />
-        <Route path="/cta" element={<CTA />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+    <App />
+  </React.StrictMode>
 )

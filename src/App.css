@@ -1,0 +1,52 @@
+/* === Barra de navegación principal === */
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cfd8d3;
+    /* fondo verde claro */
+    padding: 8px 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* === Logo y nombre === */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 35px;
+}
+
+/* === Enlaces === */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #113b2e;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* === Hover y activo === */
+.navbar-links li a:hover {
+    background-color: #aecbb5;
+}
+
+.navbar-links li.active a {
+    background-color: #aecbb5;
+    /* mismo tono que en la imagen */
+    font-weight: 600;
+}

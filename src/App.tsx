@@ -1,24 +1,25 @@
-import { Link } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import Login from './ComponentLogin/Login'
+import { Layout } from './Layout'
+import Home from './ComponentHome/Home'
+import Caracteristicas from './ComponentCaratceristicas/Caracteristicas'
+import { CTA } from './ComponentCTA/CTA'
 
 function App() {
   return (
-    <>
-      <header>
-        <img className="logo" src="assets/logo.png" alt="Logo" />
-        <nav>
-          <div className="LinksNav">
-            <Link to="/home" className="btn-fondo">Inicio</Link>
-            <Link to="/login" className="btn-fondo">Iniciar Sesión</Link>
-            <Link to="/caracteristicas" className="btn-fondo">Características</Link>
-            <Link to="/cta" className="btn-fondo">CTA</Link>
-          </div>
-        </nav>
-        <div className="busqueda">
-          <input type="text" placeholder="Buscar..." />
-          <button type="submit">🔍</button>
-        </div>
-      </header>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* Login fuera del layout para que no se muestre el nav */}
+        <Route path="/" element={<Login />} />
+
+        {/* Las demás rutas usan el layout con nav */}
+        <Route element={<Layout />}>
+          <Route path="/inicio" element={<Home />} />
+          <Route path="/caracteristicas" element={<Caracteristicas />} />
+          <Route path="/cta" element={<CTA />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

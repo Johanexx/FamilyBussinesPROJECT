@@ -162,25 +162,6 @@
   background: #e3f2ed;
 }
 
-/* ⚖️ FOOTER */
-.home-footer {
-  background: #1a1a1a;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
-.benefit-card {
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease; /* transición suave */
-  cursor: pointer;
-  transform: translateY(0); /* posición base */
-}
-
 /*  Efecto al pasar el cursor */
 .benefit-card:hover {
   transform: translateY(-10px) scale(1.03); /* se eleva y crece un poco */
