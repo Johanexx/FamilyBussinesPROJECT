@@ -1,16 +1,16 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import Login from './ComponentLogin/Login'
 import { Layout } from './Layout'
 import Home from './ComponentHome/Home'
 import Caracteristicas from './ComponentCaratceristicas/Caracteristicas'
 import { CTA } from './ComponentCTA/CTA'
-
+import { LoginForm } from './ComponentLogin/Login'
+import "./App.css";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* Login fuera del layout para que no se muestre el nav */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<LoginForm />} />
 
         {/* Las demás rutas usan el layout con nav */}
         <Route element={<Layout />}>
