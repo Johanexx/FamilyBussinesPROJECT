@@ -12,7 +12,7 @@ export const LoginForm = () => {
           Iniciar Sesión
         </h2>
 
-        {/* Formulario */}
+        {/* formulario */}
         <form className="space-y-4">
           <input
             type="text"
